@@ -1,0 +1,174 @@
+export default function Article() {
+  return (
+    <div style={{ padding: '20px' }}>
+      <h1>Sample Article 1</h1>
+      <p>This is placeholder content for Sample Article 1. Replace with your story.</p>
+    </div>
+  )
+}
+export default function Article() {
+  return (
+    <div style={{ padding: '20px' }}>
+      <h1>Sample Article 2</h1>
+      <p>This is placeholder content for Sample Article 2. Replace with your story.</p>
+    </div>
+  )
+}
+export default function Article() {
+  return (
+    <div style={{ padding: '20px' }}>
+      <h1>Sample Article 3</h1>
+      <p>This is placeholder content for Sample Article 3. Replace with your story.</p>
+    </div>
+  )
+}
+import '@/styles/globals.css'
+
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+import Link from 'next/link'
+
+export default function Home() {
+  return (
+    <div>
+      <header>Breaking News: Sample headline goes here</header>
+      <div className="container">
+        <main>
+          <div className="headline article-card">
+            <h2>Main Headline Story</h2>
+            <img src="/headline.jpg" alt="Headline"/>
+            <p>This is the main headline story. Replace with your content.</p>
+            <Link href="/articles/article1">Read more...</Link>
+          </div>
+
+          <div className="article-card">
+            <h3>Sample Article 2</h3>
+            <p>Short description of article 2.</p>
+            <Link href="/articles/article2">Read more...</Link>
+          </div>
+
+          <div className="article-card">
+            <h3>Sample Article 3</h3>
+            <p>Short description of article 3.</p>
+            <Link href="/articles/article3">Read more...</Link>
+          </div>
+        </main>
+
+        <aside className="sidebar">
+          <h3>Categories</h3>
+          <ul>
+            <li>Politics</li>
+            <li>Business</li>
+            <li>Sports</li>
+            <li>Entertainment</li>
+            <li>Lifestyle</li>
+            <li>Tech</li>
+          </ul>
+
+          <h3>Trending</h3>
+          <ul>
+            <li>Sample Trending Story 1</li>
+            <li>Sample Trending Story 2</li>
+          </ul>
+        </aside>
+      </div>body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: #c00;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.headline img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.sidebar {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.article-card {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);{
+  "name": "pinnacle-news",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}  
+}
+
+    </div>
+  )# Pinnacle News
+
+A modern online newspaper built with Next.js.
+
+## Features
+- Breaking News ticker (top bar)
+- Headline story section
+- Grid of latest stories
+- Sidebar with categories + trending
+- Sample placeholder articles
+
+## How to Run
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start development server:
+   ```bash
+   npm run dev
+   ```
+3. Build for production:
+   ```bash
+   npm run build
+   npm start
+   ```
+
+## Adding Articles
+- Create new files in `pages/articles/` (e.g., `article1.js`).
+- Each file represents one news story.
+- Update the homepage (`pages/index.js`) to include your new articles.
+
+## Deployment
+1. Push this project to your GitHub repo `pinnacle-news`.
+2. Connect repo to [Vercel](https://vercel.com).
+3. Click **Deploy** → Your site goes live!
+  }
+  placeholder image  
+initial commit
